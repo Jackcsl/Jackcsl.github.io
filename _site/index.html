@@ -108,6 +108,8 @@
         
           
         
+          
+        
       </ul>
     </nav>
   </div>
@@ -128,6 +130,50 @@
 
 <div class="wrapper">
 <ul class="post-list">
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/jquery/2015/04/18/fullpage.html">jQuery fullpage</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p>jQuery fullpage plugin 简介 fullpage.js是一个基于jQuery的插件，能够很方便快速的制作出全屏网站，兼容除IE6和IE7以外的几乎所有浏览器。主要功能有: 支持鼠标滚动 多个回调函数 支持手机、平板触摸事件 支持CSS3动画 支持窗口缩放时的自动调整 可设置滚动宽度、背景颜色、滚动速度、循环选项、回调、文本对齐方式等。 使用方式 下载fullpage包，引入到html文件。 具体引用方式(以引用CDN上的在线文件为例) //首先引入fullpage的样式文件 &lt;link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css"&gt; //然后引入jQuery文件，jQuery是fullpage的依赖环境 &lt;script type="text/javascript" src="scripts/jquery-2.2.4.min.js"&gt;&lt;/script&gt; //最后引入fullpage.js文件 &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"&gt;&lt;/script&gt; //调用fullpage $(document).ready(function(){ $("#fullpage").fullpage(); }); 基本的页面结构 &lt;div id="fullpage"&gt; &lt;div class="section"&gt;这是第一张&lt;/div&gt; &lt;div class="section"&gt; &lt;div class="slide"&gt;one&lt;/div&gt; &lt;div class="slide"&gt;two&lt;/div&gt; &lt;div class="slide"&gt;three&lt;/div&gt; &lt;div class="slide"&gt;four&lt;/div&gt; &lt;/div&gt; &lt;div class="section"&gt;这是第三张&lt;/div&gt; &lt;div...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">April 18, 2015</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/jQuery">Jquery</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
+  
+  <li>
+    <h2>
+      <a class="post-link" href="/javascript/2015/04/18/RegExp.html">RegExp详谈</a>
+    </h2>
+    <section class="post-excerpt" itemprop="description">
+      <p>正则表达式 基础形式 var re=new Regexp("a","i"); a代表具体的规则，i是一个标志。 var re=/a/i; 代表内容与上一种相同，同样可以创建一个正则表达式。 基础知识 字符类 \w 匹配任何ASCII单字符[a-zA-Z0-9]; \W 匹配任何ASCII单字符之外的字符; \s 匹配任何Unicode空白符； \S 匹配任何Unicode空白符之外的字符； \d 匹配任何数字[0-9]; \D 匹配任何数字之外的字符； […] 匹配方括号中的所有字符； [^…] 匹配非方括号中的所有字符 重复类 {n} 匹配前一项n次 var re=/a{3}/i; 表示需要连续匹配三个a。如aaaghjk可以匹配，asafgg就不可以匹配。 {n,} 匹配前一项至少n次，至多不限 {n,m} 匹配前一项至少n次，最多m次 {?} 匹配前一项0次或者1次 {+} 匹配前一项至少一次 {*} 匹配前一项0次或者多次 选择符 | 分隔可以用来选择的文字 var re=/a|b/i; 匹配a或者b。 定位符...</p>
+    </section>
+    <section class="post-meta">
+      <div class="post-date">April 18, 2015</div>
+      <div class="post-categories">
+      in 
+        
+        <a href="/category/Javascript">Javascript</a>
+        
+      
+      </div>
+    </section>
+  </li>
+  
+  <hr>
+  
   
   <li>
     <h2>
@@ -153,17 +199,17 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy6.html">Dummy Post 6</a>
+      <a class="post-link" href="/jekyll/2015/04/18/welcom.html">nima!</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
-      <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
+      <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...</p>
     </section>
     <section class="post-meta">
       <div class="post-date">April 18, 2015</div>
       <div class="post-categories">
       in 
         
-        <a href="/category/Dummy">Dummy</a>
+        <a href="/category/Jekyll">Jekyll</a>
         
       
       </div>
@@ -175,51 +221,7 @@
   
   <li>
     <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy5.html">Dummy Post 5</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">April 18, 2015</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/Dummy">Dummy</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy4.html">Dummy Post 4</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">April 18, 2015</div>
-      <div class="post-categories">
-      in 
-        
-        <a href="/category/Dummy">Dummy</a>
-        
-      
-      </div>
-    </section>
-  </li>
-  
-  <hr>
-  
-  
-  <li>
-    <h2>
-      <a class="post-link" href="/dummy/2015/04/18/dummy3.html">Dummy Post 3</a>
+      <a class="post-link" href="/dummy/2015/04/18/dummy8.html">Dummy Post 100</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
       <p>This is just a dummy post. Lorem ipsum and all the rest. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute...</p>
@@ -249,7 +251,7 @@
       </span>
     </a>
     
-    <span class="page-number">Page 1 of 2</span>
+    <span class="page-number">Page 1 of 3</span>
     
     <span class="fa-stack fa-lg">
       <i class="fa fa-square fa-stack-2x"></i>
@@ -294,6 +296,8 @@
         
         
           <li class="nav-link"><a href="/typography/">Typography</a>
+        
+        
         
         
         

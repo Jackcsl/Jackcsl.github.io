@@ -42,7 +42,7 @@ demo("hello, world!", 10);
 
 ...will come out looking like this:
 
-{% highlight javascript %}
+{% highlight javascript %}  
 function demo(string, times) {
   for (var i = 0; i < times; i++) {
     console.log(string);

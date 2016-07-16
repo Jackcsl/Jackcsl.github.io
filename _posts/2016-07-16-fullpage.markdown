@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "jQuery fullpage"
+date:   2015-04-18 08:43:59
+author: Jack chen
+categories: jQuery
+tags: lorem ipsum
+---
+
+# jQuery fullpage plugin  
+
+### 简介  
+
+fullpage.js是一个基于jQuery的插件，能够很方便快速的制作出全屏网站，兼容除IE6和IE7以外的几乎所有浏览器。主要功能有:  
+
+1. 支持鼠标滚动  
+2. 多个回调函数  
+3. 支持手机、平板触摸事件  
+4. 支持CSS3动画  
+5. 支持窗口缩放时的自动调整  
+6. 可设置滚动宽度、背景颜色、滚动速度、循环选项、回调、文本对齐方式等。  
+
+### 使用方式  
+
+1. 下载fullpage包，引入到html文件。  
+2. 具体引用方式(以引用CDN上的在线文件为例)
+{% highlight javascript %}  
+//首先引入fullpage的样式文件  
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">  
+//然后引入jQuery文件，jQuery是fullpage的依赖环境  
+<script type="text/javascript" src="scripts/jquery-2.2.4.min.js"></script>  
+//最后引入fullpage.js文件  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>  
+//调用fullpage  
+$(document).ready(function(){
+  $("#fullpage").fullpage();
+});  
+{% endhighlight %}  
+
+### 基本的页面结构  
+{% highlight html %}  
+<div id="fullpage">
+		<div class="section">这是第一张</div>
+		<div class="section">
+			<div class="slide">one</div>
+			<div class="slide">two</div>
+			<div class="slide">three</div>
+			<div class="slide">four</div>
+		</div>
+		<div class="section">这是第三张</div>
+		<div class="section">这是第四张</div>
+	</div>
+{% endhighlight %}  
+总共有四页幻灯片，每个`section`都是一页幻灯片，每个`slide`都是一个可以左右滑动的幻灯片。  
+
+#### fullpage的配置项  
+
+{% highlight jQuery%}  
+$(document).ready(function(){
+  $("#fullpage").fullpage({
+    sectionColor:["blue","green","red","yellow"],
+    controlArrows:false,
+    verticalCenter:false,
+    verticalCenter:false,
+    resize:true,
+    scrollSpeed:2000，
+    anchors:["page1","page2","page3","page4"]
+  });
+});
+{% endhighlight %}
+1. `sectionColor:["blue","green","red","yellow"]`  
+可以为每个`section`设置`background-color`属性。  
+2.`coltrolArrow`  
+定义是否通过箭头来控制`slide`幻灯片，默认为`true`。当设置为`false`时，幻灯片左右的箭头就会消失，在移动设备上，可以通过滑动来操作幻灯片。  
+3.`verticalCenter`  
+每一页的内容是否垂直居中，默认为true，一般保持默认值。  
+4.`resize`  
+字体是否随窗口的缩放而缩放，默认为false。  
+5.`scrollSpeed`  
+滚动速度，单位为毫秒，默认为700。  
+6.`anchors`  
+定义锚链接，默认值为[]。有了锚链接用户就可以快速打开定位到某一页面。  
+**注意** 定义锚链接的时候，值不要和页面中任意的id或name相同，尤其是在IE浏览器下，而且定义时不要加#。  
+7.
