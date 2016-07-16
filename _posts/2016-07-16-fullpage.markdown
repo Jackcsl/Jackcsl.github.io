@@ -23,14 +23,14 @@ fullpage.js是一个基于jQuery的插件，能够很方便快速的制作出全
 ### 使用方式  
 
 1. 下载fullpage包，引入到html文件。  
-2. 具体引用方式(以引用CDN上的在线文件为例)
+2. 具体引用方式(以引用CDN上的在线文件为例)，打开cdn.js官网，搜索响应文件。  
 {% highlight javascript %}  
 //首先引入fullpage的样式文件  
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">  
+<link href="https://...jquery.fullPage.min.css">  
 //然后引入jQuery文件，jQuery是fullpage的依赖环境  
-<script type="text/javascript" src="scripts/jquery-2.2.4.min.js"></script>  
+<script src="...scripts/jquery-2.2.4.min.js"></script>  
 //最后引入fullpage.js文件  
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>  
+<script src="https://jquery.fullPage.min.js"></script>  
 //调用fullpage  
 $(document).ready(function(){
   $("#fullpage").fullpage();

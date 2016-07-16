@@ -164,16 +164,16 @@
 
 <ol>
   <li>下载fullpage包，引入到html文件。</li>
-  <li>具体引用方式(以引用CDN上的在线文件为例)</li>
+  <li>具体引用方式(以引用CDN上的在线文件为例)，打开cdn.js官网，搜索响应文件。</li>
 </ol>
 
 <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript">  
 <span class="c1">//首先引入fullpage的样式文件  </span>
-<span class="o">&lt;</span><span class="nx">link</span> <span class="nx">rel</span><span class="o">=</span><span class="s2">"stylesheet"</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/css"</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css"</span><span class="o">&gt;</span>  
+<span class="o">&lt;</span><span class="nx">link</span> <span class="nx">href</span><span class="o">=</span><span class="s2">"https://...jquery.fullPage.min.css"</span><span class="o">&gt;</span>  
 <span class="c1">//然后引入jQuery文件，jQuery是fullpage的依赖环境  </span>
-<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"scripts/jquery-2.2.4.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script&gt; </span><span class="err"> 
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"...scripts/jquery-2.2.4.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script&gt; </span><span class="err"> 
 </span><span class="c1">//最后引入fullpage.js文件  </span>
-<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text/javascript"</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script&gt; </span><span class="err"> 
+<span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"https://jquery.fullPage.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script&gt; </span><span class="err"> 
 </span><span class="c1">//调用fullpage  </span>
 <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
   <span class="nx">$</span><span class="p">(</span><span class="s2">"#fullpage"</span><span class="p">).</span><span class="nx">fullpage</span><span class="p">();</span>
